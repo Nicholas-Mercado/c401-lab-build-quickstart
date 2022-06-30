@@ -25,12 +25,20 @@ def create_readme():
             for line in input:
                 output.write(line)
 
+def create_test_file(file_name):
+    os.makedirs(f'test')
+    with open(f'test/test_{file_name}.py', 'w') as f:
+        pass
+    with open('test/__init__.py', 'w') as f:
+        pass
+
 def Main():
     
     file_name = opening_msg()
     create_project_file(file_name)
     create_gitignore()
     create_readme()
+    create_test_file(file_name)
     closing_msg()
     
 
