@@ -2,26 +2,26 @@ import os
 from messages import opening_msg, closing_msg
 
 def get_path():
-    """Returns path to this module"""
     path = str(os.path.dirname(os.path.realpath(__file__)))
-    return path
+    new_path = path.replace('/lab_tree_build','')
+    return new_path
 
 def create_project_file(file_name):
     """Creates project file and folder"""
     os.makedirs(f'{file_name}')
     with open(f'{file_name}/{file_name}.py', 'w') as f:
         pass
-        
+
 def create_gitignore():
     """Creates gitignore file from assets"""
-    with open(f'{get_path()}/file_schema/get_gitignore.txt', 'r') as input:
+    with open(f'{get_path()}/assets/get_gitignore.txt', 'r') as input:
         with open("gitignore", "w") as output:
             for line in input:
                 output.write(line)
-
+                
 def create_readme():
     """Creates README file from assets"""
-    with open(f'{get_path()}/file_schema/get_README.txt', 'r') as input:
+    with open(f'{get_path()}/assets/get_gitignore.txt', 'r') as input:
         with open("README.md", "w") as output:
             for line in input:
                 output.write(line)
