@@ -20,18 +20,22 @@ def create_gitignore():
                 output.write(line)
 
 def create_readme():
+    """Creates README file from assets"""
     with open(f'{get_path()}/file_schema/get_README.txt', 'r') as input:
         with open("README.md", "w") as output:
             for line in input:
                 output.write(line)
 
 def create_test_file(file_name):
+    """Creates test file, folder, and init.py"""
     os.makedirs(f'test')
     with open(f'test/test_{file_name}.py', 'w') as f:
         pass
     with open('test/__init__.py', 'w') as f:
         pass
+    
 def create_venv():
+    """Creates VA"""
     os.system('python3 -m venv .venv') 
 
 def Main():
