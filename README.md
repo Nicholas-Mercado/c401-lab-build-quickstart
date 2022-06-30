@@ -5,40 +5,45 @@
 
 This project is to give a quick start, lab tree builder, for c401 students
 
-<!-- ## Links and Resources
+## Links and Resources
 
-[place holder]()
+[Reading and Writing Files in Python](https://realpython.com/read-write-files-python/)
 
-[]() -->
+[os](https://docs.python.org/3/library/os.html)
 
-<!--- back-end server url (when applicable)
-front-end application (when applicable) --->
+## Setup
 
-<!-- code help from:
+### Step One
 
-- 
-- 
-- 
+___
+
+- Clone `c401-lab-build-quickstart` repository to your machine
+
+### Step Two
+
+___
+
+- Create folder for your lab to be stored in
+- Navigate into folder
+
+### Step Three
+
+___
+
+#### Run script
+
+You can always run the script like this
   
-## Setup -->
+```python
+python path/to/your/script/lab_tree_build.py
+```
 
-<!--.env requirements (where applicable)
-i.e.
+or
 
-PORT - Port Number
-DATABASE_URL - URL to the running Postgres instance/db-->
+My suggestion is to create a alias
 
-<!-- ### How to initialize -->
+### Step Four
 
-<!-- - create alias
-- Create repo folder
-- cd into repo
-- run alias command -->
+___
 
-<!-- ### How to use your library (where applicable)
-
-### Tests
-
-- How do you run tests?
-- Any tests of note?
-- Describe any tests that you did not complete, skipped, etc -->
+Enjoy working on your lab!
