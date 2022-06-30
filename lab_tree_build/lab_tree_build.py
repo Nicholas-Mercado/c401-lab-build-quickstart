@@ -6,8 +6,24 @@ def get_path():
     path = str(os.path.dirname(os.path.realpath(__file__)))
     return path
 
+def create_project_file(file_name):
+    """Creates project file and folder"""
+    os.makedirs(f'{file_name}')
+    with open(f'{file_name}/{file_name}.py', 'w') as f:
+        pass
+    
+    
+    
+def create_gitignore():
+    """Creates gitignore file from assets"""
+    with open(f'{get_path()}/file_schema/get_gitignore.txt', 'r') as input:
+        with open("gitignore", "w") as output:
+            for line in input:
+                output.write(line)
+
 def Main():
     
     file_name = opening_msg()
-    
+    create_project_file(file_name)
+    closing_msg()
 Main()
