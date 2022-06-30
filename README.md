@@ -41,3 +41,9 @@ python path/to/your/script/lab_tree_build.py
 or
 
 My suggestion is to create a alias
+
+### Step Four
+
+___
+
+Enjoy working on your lab!
