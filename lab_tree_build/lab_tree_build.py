@@ -15,7 +15,7 @@ def create_project_file(file_name):
 def create_gitignore():
     """Creates gitignore file from assets"""
     with open(f'{get_path()}/assets/get_gitignore.txt', 'r') as input:
-        with open("gitignore", "w") as output:
+        with open(".gitignore", "w") as output:
             for line in input:
                 output.write(line)
                 

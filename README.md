@@ -5,11 +5,19 @@
 
 This project is to give a quick start, lab tree builder, for c401 students
 
-## Links and Resources
+Running `c401-lab-build-quickstart` will return the following tree
 
-[Reading and Writing Files in Python](https://realpython.com/read-write-files-python/)
-
-[os](https://docs.python.org/3/library/os.html)
+```python
+.
+├── README.md
+├── .gitignore
+├── .venv
+├── your_lab
+│   └── your_lab.py
+└── test
+    ├── __init__.py
+    └── test_your_lab.py
+```
 
 ## Setup
 
@@ -46,4 +54,16 @@ My suggestion is to create a alias
 
 ___
 
+Activate your virtual environment
+
+```python
+source .venv/bin/activate
+```
+
 Enjoy working on your lab!
+
+## Links and Resources
+
+[Reading and Writing Files in Python](https://realpython.com/read-write-files-python/)
+
+[os](https://docs.python.org/3/library/os.html)
